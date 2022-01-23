@@ -29,11 +29,11 @@ function onInput() {
                 return `<li>
               <p>Country: <span class="name-official">${country.name.official}</span></p>
               <p>Capital: <span class="capital">${country.capital.join('')}</span></p>
-              <div>Flag: <img class='flagImg' src="${country.flags.svg}" alt="Flag of the country" /></div>
+              <p>Population: <span class="population">${country.population}</span></p>
               <p>Language: <span class="languages">${Object.values(country.languages).join(
                 '',
               )}</span></p>
-              <p>Population: <span class="population">${country.population}</span></p>
+              <div>Flag: <img class='flagImg' src="${country.flags.svg}" alt="Flag of the country" /></div>
               </li>`;
               } else {
                 return `<li>
