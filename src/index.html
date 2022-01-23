@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,10 +7,30 @@
     <title>Homework 10</title>
   </head>
   <body>
-    <input type="text" id="search-box" />
+    <header></header>
+    <div class="form">
+      <label for="max-country">Max amount of countries:</label>
+      <input
+        min="1"
+        max="10"
+        value="5"
+        class="input-number"
+        placeholder="5"
+        type="number"
+        id="max-country"
+      />
+    </div>
+    <div class="form">
+      <label for="detaly">Extra information:</label>
+      <input class="input-check" type="checkbox" id="details" />
+    </div>
+    <div class="form">
+      <label for="search-box">Write down the name of the country:</label>
+      <input class="input-text" placeholder="Country" type="text" id="search-box" />
+    </div>
+
     <ul class="country-list"></ul>
     <div class="country-info"></div>
-
     <script src="index.js"></script>
   </body>
 </html>
